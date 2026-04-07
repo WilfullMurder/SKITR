@@ -19,8 +19,7 @@ The system is structured into 5 main containers:
 5. **Transport** - Abstracts communication channels:
     - `server` handles TCP connections and passes messages to the runtime.
 
-
-
+![SKITR_Container](https://github.com/WilfullMurder/SKITR/blob/main/docs/img/Container-001.svg)
 
 
 ### Dependencies
