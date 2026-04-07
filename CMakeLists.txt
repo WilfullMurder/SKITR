@@ -38,6 +38,8 @@ set(SOURCES
         src/registry/method_registry.cpp
         src/protocol/json_protocol.cpp
         src/transport/server.cpp
+        src/main.cpp
+        src/client.cpp
 )
 
 source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} PREFIX source FILES ${SOURCES})
@@ -111,25 +113,23 @@ install(FILES "${CMAKE_CURRENT_BINARY_DIR}/skitrConfig.cmake"
 # -----------------------------
 # Optional executable for testing
 # -----------------------------
-#add_executable(skitrApp
-#
-#)
-#
-#target_link_libraries(skitrApp PRIVATE skitr)
-#
-## Small test client (C++)
-#add_executable(skitrClient
-#
-#)
+add_executable(skitr_server src/main.cpp)
+target_link_libraries(skitr_server PRIVATE skitr)
+target_include_directories(skitr_server PRIVATE
+        ${asio_SOURCE_DIR}/asio/include
+        ${nlohmann_json_SOURCE_DIR}/include
+)
 
-#target_include_directories(skitrClient PRIVATE
-#        ${asio_SOURCE_DIR}/asio/include
-#        ${nlohmann_json_SOURCE_DIR}/include
-#)
-#
-#target_compile_definitions(skitrClient PRIVATE ASIO_STANDALONE)
-#
-#target_link_libraries(skitrClient PRIVATE ws2_32 mswsock) # on Windows; harmless elsewhere
+add_executable(skitr_client src/client.cpp)
+target_link_libraries(skitr_client PRIVATE skitr)
+target_include_directories(skitr_server PRIVATE
+        ${asio_SOURCE_DIR}/asio/include
+)
+
+target_compile_definitions(skitr_server PRIVATE ASIO_STANDALONE)
+if(WIN32)
+    target_link_libraries(skitr_server PRIVATE ws2_32 mswsock)
+endif()
 
 enable_testing()
 add_subdirectory(tests)

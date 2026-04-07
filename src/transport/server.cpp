@@ -69,42 +69,44 @@ namespace skitter{
             void handleConnection(tcp::socket socket) {
                 try {
                     asio::streambuf buffer;
-                    asio::error_code ec;
-                    std::size_t n = asio::read_until(socket, buffer, "\n", ec);
-                    if (ec && ec != asio::error::eof) {
-                        // read error, close connection
-                        asio::error_code ignore;
-                        socket.shutdown(tcp::socket::shutdown_both, ignore);
-                        socket.close(ignore);
-                        return;
+
+                    while (true) {
+                        asio::error_code ec;
+                        std::size_t n = asio::read_until(socket, buffer, "\n", ec);
+                        if (ec) {
+                            break; // client disconnected
+                        }
+
+                        std::istream is(&buffer);
+                        std::string line;
+                        std::getline(is, line);
+                        if (!line.empty() && line.back() == '\r') line.pop_back();
+
+                        std::string parse_error;
+                        auto req_opt = protocol::from_json_request(line, &parse_error);
+                        skitter::core::RpcResponse res;
+                        if (!req_opt.has_value()) {
+                            res = skitter::core::RpcResponse::failure(skitter::core::makeParseError(parse_error), std::nullopt);
+                        } else {
+                            res = dispatcher_.dispatch(*req_opt);
+                        }
+
+                        std::string out = protocol::to_json(res) + "\n";
+                        asio::write(socket, asio::buffer(out), ec);
                     }
 
-                    std::istream is(&buffer);
-                    std::string line;
-                    std::getline(is, line);
-                    if (!line.empty() && line.back() == '\r') line.pop_back();
-
-                    std::string parse_error;
-                    auto req_opt = protocol::from_json_request(line, &parse_error);
-                    skitter::core::RpcResponse res;
-                    if (!req_opt.has_value()) {
-                        res = skitter::core::RpcResponse::failure(skitter::core::makeParseError(parse_error), std::nullopt);
-                    } else {
-                        res = dispatcher_.dispatch(*req_opt);
-                    }
-
-                    std::string out = protocol::to_json(res) + "\n";
-                    out.push_back('\n');
-                    asio::write(socket, asio::buffer(out), ec);
                     asio::error_code ignore;
                     socket.shutdown(tcp::socket::shutdown_both, ignore);
                     socket.close(ignore);
+
                 } catch (const std::exception& ex) {
                     asio::error_code ignore;
                     socket.shutdown(tcp::socket::shutdown_both, ignore);
                     socket.close(ignore);
                 }
             }
+
+
             asio::io_context io_ctx_;
             tcp::acceptor acceptor_;
             skitter::core::Dispatcher& dispatcher_;
