@@ -33,9 +33,10 @@ set(HEADERS_PUB ${HEADERS_PUB_ROOT} ${HEADERS_PUB_SUB})
 
 set(SOURCES
         ${HEADERS_PUB}
-        src/core/dispatcher.cpp
-        src/core/message.cpp
+        src/runtime/dispatcher.cpp
         src/core/value.cpp
+        src/registry/method_registry.cpp
+        src/protocol/json_protocol.cpp
 )
 
 source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} PREFIX source FILES ${SOURCES})
@@ -46,14 +47,22 @@ source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} PREFIX source FILES ${SOURCES})
 # -----------------------------
 add_library(skitr ${SOURCES})
 
+include(GenerateExportHeader)
+generate_export_header(skitr
+        EXPORT_FILE_NAME skitr/skitr_export.h
+)
+
 target_include_directories(skitr
         PUBLIC
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}>
         $<BUILD_INTERFACE:${asio_SOURCE_DIR}/asio/include>
         $<BUILD_INTERFACE:${nlohmann_json_SOURCE_DIR}/include>
+        $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
         PRIVATE
-        $<INSTALL_INTERFACE:include>
+        src
 )
+
 
 target_compile_definitions(skitr PUBLIC ASIO_STANDALONE)
 
@@ -121,3 +130,5 @@ install(FILES "${CMAKE_CURRENT_BINARY_DIR}/skitrConfig.cmake"
 #
 #target_link_libraries(skitrClient PRIVATE ws2_32 mswsock) # on Windows; harmless elsewhere
 
+enable_testing()
+add_subdirectory(tests)
