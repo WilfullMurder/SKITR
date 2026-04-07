@@ -3,8 +3,6 @@
 
 #include <skitr/skitr_export.h>
 #include <skitr/core/message.h>
-#include <skitr/core/error.h>
-#include <skitr/core/value.h>
 #include <skitr/registry/method_registry.h>
 
 namespace skitter {
