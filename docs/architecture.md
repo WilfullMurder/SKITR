@@ -30,3 +30,23 @@ The system is structured into 5 main containers:
 
 ---
 
+## Design Highlights
+- **Separation of Concerns**: Clear boundaries between `core`, `protocol`, `registry`, `runtime`, and `transport`.
+- **Extensibility**: New transports (e.g., WebSocket) can be added without modifying core logic.
+- **Thread Safety**: The `method_registry` uses mutexes to ensure safe concurrent access.
+- **Error Handling**: Comprehensive error structures and handling flows to ensure robust communication.
+
+
+## Basic Request-Response Flow
+![Basic Request-Response Sequence Diagram](https://github.com/WilfullMurder/SKITR/blob/main/docs/img/basic_request_flow.svg)
+
+
+## Error Handling Flow
+![Error Handling Sequence Diagram](https://github.com/WilfullMurder/SKITR/blob/main/docs/img/error_flow.svg)
+
+
+## Value Parsing Flow
+![Value Parsing Sequence Diagram](https://github.com/WilfullMurder/SKITR/blob/main/docs/img/value_parsing.svg)
+
+## Method Dispatch Flow
+![Method Dispatch Sequence Diagram](https://github.com/WilfullMurder/SKITR/blob/main/docs/img/method_dispatch.svg)
