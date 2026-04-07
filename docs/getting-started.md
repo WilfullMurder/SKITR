@@ -54,6 +54,23 @@ ioc.run();
 ## Testing JSON-RPC
 Use the built-in client for testing by running the client executable from the build folder and sending JSON-RPC requests to the server.
 
+1. Run the server:
+```
+./skitr_server 12345
+```
+2. Run the client in a separate terminal:
+```
+./skitr_client 127.0.0.1 12345
+```
+3. Type JSON-RPC requests:
+```
+{"jsonrpc":"2.0","method":"echo","params":["hello"],"id":1}
+{"jsonrpc":"2.0","method":"add","params":[3,5],"id":2}
+```
+4. Exit by typing:
+```
+exit
+```
 Alternatively, use a JSON-RPC client (e.g., Python jsonrpcclient) to send requests:
 ```python
 from jsonrpcclient import request
