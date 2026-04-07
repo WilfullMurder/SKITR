@@ -37,6 +37,7 @@ set(SOURCES
         src/core/value.cpp
         src/registry/method_registry.cpp
         src/protocol/json_protocol.cpp
+        src/transport/server.cpp
 )
 
 source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} PREFIX source FILES ${SOURCES})
