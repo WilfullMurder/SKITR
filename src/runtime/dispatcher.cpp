@@ -5,7 +5,7 @@
 #include <stdexcept>
 
 namespace skitter {
-    namespace core{
+    namespace runtime{
 
         Dispatcher::Dispatcher(registry::MethodRegistry& registry) noexcept : registry_(registry) {}
 

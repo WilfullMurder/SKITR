@@ -6,7 +6,7 @@
 #include <skitr/registry/method_registry.h>
 
 namespace skitter {
-    namespace core {
+    namespace runtime {
 
         /**
          * The Dispatcher class is responsible for routing incoming RPC requests to the appropriate method handlers registered in a MethodRegistry.
