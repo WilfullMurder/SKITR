@@ -43,12 +43,21 @@ cmake --build . --config Debug
 ```
 Example:
 ```cpp
-// Initialize I/O context
-asio::io_context ioc;
+// create method registry and register example methods
+registry::MethodRegistry reg;
+reg.registerMethod("echo", registry::MethodRegistry::Handler(
+        [](const std::vector<core::Value>& params) -> core::Value {
+            if (!params.empty()) return params[0];
+            return core::Value();
+        }
+));
+
+// create dispatcher
+core::Dispatcher dispatcher(reg);
 
 // Start RPC server
-skitter::rpc::RpcServer server(ioc, 12345);
-ioc.run();
+skitter::transport::RpcServer server(12345, dispatcher);
+server.start();
 ```
 
 ## Testing JSON-RPC
