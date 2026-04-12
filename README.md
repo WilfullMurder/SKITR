@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/WilfullMurder/SKITR/blob/main/docs/img/SKITR_logo.png" alt="SKITR logo" width="420"/>
+<img src="https://github.com/WilfullMurder/SKITR/blob/main/docs/img/SKITR_logo.png" alt="SKITR logo" width="640"/>
 </p>
 
 # SKITR
