@@ -1,3 +1,7 @@
+<p align="center">
+<img src="https://github.com/WilfullMurder/SKITR/blob/main/docs/img/skitr_logo.png" alt="SKITR logo"/>
+</p>
+
 # SKITR
 ### Structured Kernel for Interprocess Transport (RPC)
 
