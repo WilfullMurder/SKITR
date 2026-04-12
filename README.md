@@ -1,11 +1,7 @@
 <p align="center">
 <img src="https://github.com/WilfullMurder/SKITR/blob/main/docs/img/SKITR_logo.png" alt="SKITR logo" width="640"/>
 </p>
-
-# SKITR
-### Structured Kernel for Interprocess Transport (RPC)
-
-**SKITR** (skitter) is a lightweight C++ framework for building JSON-RPC 2.0 servers and clients.  
+A lightweight C++ framework for building JSON-RPC 2.0 servers and clients.  
 It provides modular components for JSON-RPC messages, method dispatch, and network transport.
 
 ---
