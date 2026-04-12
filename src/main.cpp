@@ -44,7 +44,7 @@ int main(int argc, char* argv[]) {
     ));
 
     // create dispatcher
-    core::Dispatcher dispatcher(reg);
+    runtime::Dispatcher dispatcher(reg);
 
     // start server
     transport::Server server(port, dispatcher);

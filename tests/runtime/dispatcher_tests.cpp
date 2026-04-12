@@ -6,7 +6,7 @@
 #include <skitr/core/value.h>
 
 using skitter::registry::MethodRegistry;
-using skitter::core::Dispatcher;
+using skitter::runtime::Dispatcher;
 using skitter::core::Value;
 using skitter::core::RpcRequest;
 using skitter::core::ErrorCode;

@@ -3,6 +3,7 @@
 
 #include <exception>
 #include <stdexcept>
+using namespace skitter::core;
 
 namespace skitter {
     namespace runtime{

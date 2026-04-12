@@ -58,6 +58,7 @@ namespace skitter {
         Value::Value(std::vector<Value>&& arr): type_(Type::Array), storage_(std::make_shared<array_t>(std::move(arr))) {}
         Value::Value(const std::map<std::string, Value>& obj): type_(Type::Object), storage_(std::make_shared<object_t>(obj)) {}
         Value::Value(std::map<std::string, Value>&& obj): type_(Type::Object), storage_(std::make_shared<object_t>(std::move(obj))) {}
+
         Value::Value(const Value& other): type_(other.type_){
             switch (other.type_) {
                 case Type::Null:

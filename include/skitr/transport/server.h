@@ -2,15 +2,14 @@
 #define SKITR_SERVER_H
 
 #include <skitr/skitr_export.h>
+#include <skitr/runtime/dispatcher.h>
 #include <cstdint>
 #include <memory>
 
 
 
 namespace skitter {
-    namespace core{
-        class Dispatcher;
-    }
+
     namespace transport{
         /**
          * A simple TCP server that listens for incoming connections and processes JSON-RPC requests using a Dispatcher.
@@ -20,7 +19,7 @@ namespace skitter {
          */
         class SKITR_EXPORT Server {
         public:
-            Server(uint16_t port, skitter::core::Dispatcher& dispatcher);
+            Server(uint16_t port, runtime::Dispatcher& dispatcher);
             ~Server();
 
             void start();

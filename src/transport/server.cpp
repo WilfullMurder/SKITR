@@ -16,7 +16,7 @@ using asio::ip::tcp;
 namespace skitter{
     namespace transport {
         struct Server::Impl {
-            Impl(uint16_t port, skitter::core::Dispatcher& dispatcher) : io_ctx_(), acceptor_(io_ctx_), dispatcher_(dispatcher), is_running_(false), bound_port_(port) {
+            Impl(uint16_t port, runtime::Dispatcher& dispatcher) : io_ctx_(), acceptor_(io_ctx_), dispatcher_(dispatcher), is_running_(false), bound_port_(port) {
                 asio::error_code ec;
 
                 tcp::endpoint endpoint(tcp::v4(), port);
@@ -109,14 +109,14 @@ namespace skitter{
 
             asio::io_context io_ctx_;
             tcp::acceptor acceptor_;
-            skitter::core::Dispatcher& dispatcher_;
+            runtime::Dispatcher& dispatcher_;
             std::atomic<bool> is_running_;
             std::thread accept_thread_;
             std::thread io_thread_;
             uint16_t bound_port_;
         };
 
-        Server::Server(uint16_t port, skitter::core::Dispatcher& dispatcher) : impl_(std::make_unique<Impl>(port, dispatcher)) {}
+        Server::Server(uint16_t port, runtime::Dispatcher& dispatcher) : impl_(std::make_unique<Impl>(port, dispatcher)) {}
 
         Server::~Server() = default;
 

@@ -19,7 +19,7 @@ if (!params.empty()) return params[0];
 return core::Value();
 }));
 
-core::Dispatcher disp(reg);
+runtime::Dispatcher disp(reg);
 
 // start server on ephemeral port
 transport::Server server(0, disp);
