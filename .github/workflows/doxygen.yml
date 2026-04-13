@@ -1,51 +1,56 @@
-name: Doxygen
+  name: Doxygen
 
-on:
-  push:
-    branches: [ main ]
+  on:
+    push:
+      branches: [ main ]
 
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pages: write
-      id-token: write
+  jobs:
+    build-and-deploy:
+      runs-on: ubuntu-latest
+      permissions:
+        contents: write
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v4
+          with:
+            fetch-depth: 0
 
-      - name: Set up Doxygen and diagram tools
-        run: |
-          sudo apt-get update && sudo apt-get install -y doxygen graphviz mscgen
+        - name: Set up Doxygen and diagram tools
+          run: |
+            sudo apt-get update
+            sudo apt-get install -y doxygen graphviz mscgen
 
-      - name: Generate Doxygen
-        run: |
-          doxygen Doxyfile
+        - name: Generate Doxygen
+          run: |
+            doxygen Doxyfile
 
-      - name: Deploy to docs branch
-        env:
-          GITHUB_TOKEN: ${{ secrets.SITE_DEPLOY_TOKEN }}
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+        - name: Deploy to docs branch
+          env:
+            GITHUB_TOKEN: ${{ secrets.SITE_DEPLOY_TOKEN }}
+          run: |
+            set -e
+            
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            
+            # Authenticate
+            git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}
+            
+            # Create fresh orphan docs branch
+            git checkout --orphan docs
+            
+            # Clean working tree
+            git rm -rf . || true
+            
+            # Ensure docs exist (debug aid)
+            ls -la docs/html || (echo "docs/html missing!" && exit 1)
+            
+            # Copy generated docs (ignore transient rsync warnings)
+            rsync -a --delete docs/html/ . || true
+            
+            # Commit & force push
+            git add -A
+            git commit -m "Update Doxygen docs from main@${GITHUB_SHA}" || echo "No changes to commit"
+            git push origin docs --force
 
-          # Authenticate
-          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}
-
-          # Create fresh docs branch
-          git checkout --orphan docs
-
-          # Remove all existing files
-          git rm -rf . || true
-
-          # Copy generated docs
-          rsync -a --delete docs/html/ .
-
-          # Commit & force push
-          git add -A
-          git commit -m "Update Doxygen docs from main@${GITHUB_SHA}" || echo "No changes to commit"
-          git push origin docs --force
