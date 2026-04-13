@@ -1,0 +1,72 @@
+# Doxyfile for SKITR
+# Minimal, common options for generating Doxygen HTML
+
+PROJECT_NAME           = "SKITR"
+PROJECT_BRIEF          = ""
+PROJECT_LOGO           = docs/img/SKITR_logo.png
+PROJECT_NUMBER         = "v0.1.2"
+
+OUTPUT_DIRECTORY       = docs
+CREATE_SUBDIRS         = NO
+
+# Input
+INPUT                  = include src docs
+RECURSIVE              = YES
+FILE_PATTERNS          = *.h *.hpp *.c *.cpp *.md
+
+# Images
+IMAGE_PATH             = docs/img
+
+# Build
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = NO
+
+# Source browsing
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = YES
+STRIP_CODE_COMMENTS    = NO
+
+# Diagrams and graphs
+HAVE_DOT               = YES
+DOT_PATH               = /usr/bin
+DOT_IMAGE_FORMAT       = png
+DOT_FONTNAME           = Helvetica
+DOT_GRAPH_MAX_NODES    = 100
+UML_LOOK               = YES
+DOT_UML_DETAILS        = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+DOT_CLEANUP            = YES
+# Limit the number of parallel dot threads to avoid std::system_error on some Windows setups
+DOT_NUM_THREADS        = 1
+
+# Enable MSCGEN for sequence diagrams (if installed)
+HAVE_MSCGEN            = YES
+MSCGEN_PATH            = /usr/bin
+
+# HTML
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+HTML_COLORSTYLE_HUE    = 220
+HTML_DYNAMIC_SECTIONS  = NO
+
+# Add a custom stylesheet to tweak logo size and header spacing
+HTML_EXTRA_STYLESHEET  = docs/doxygen-custom.css
+
+# Index generation
+GENERATE_INDEX         = YES
+# Should be relative to one of the INPUT entries (docs is an INPUT dir), so use the filename only
+USE_MDFILE_AS_MAINPAGE = getting-started.md
+
+# Index & Search
+GENERATE_TREEVIEW      = YES
+SEARCHENGINE           = YES
+
+# Misc
+QUIET                  = NO
+GENERATE_LATEX         = NO
+
+# Optimizations
+JAVADOC_AUTOBRIEF      = YES

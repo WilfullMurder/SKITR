@@ -1,0 +1,47 @@
+name: Doxygen
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Doxygen and diagram tools
+        run: |
+          sudo apt-get update && sudo apt-get install -y doxygen graphviz mscgen
+
+      - name: Generate Doxygen
+        run: |
+          doxygen Doxyfile
+
+      - name: Deploy to docs branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.SITE_DEPLOY_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Create a temporary worktree for the docs branch
+          git fetch origin
+          # If docs branch doesn't exist, create an orphan branch
+          if git show-ref --verify --quiet refs/heads/docs; then
+            git worktree add /tmp/docs docs
+          else
+            git worktree add -B docs /tmp/docs
+          fi
+          rsync -a --delete docs/html/ /tmp/docs/
+          pushd /tmp/docs
+          git add -A
+          git commit -m "Update Doxygen docs from main@${GITHUB_SHA}" || echo "No changes to commit"
+          git push origin HEAD:refs/heads/docs

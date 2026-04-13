@@ -19,7 +19,7 @@ The system is structured into 5 main containers:
 5. **Transport** - Abstracts communication channels:
     - `server` handles TCP connections and passes messages to the runtime.
 
-![SKITR_Container](https://github.com/WilfullMurder/SKITR/blob/main/docs/img/Container-001.svg)
+![SKITR_Container](img/Container-001.svg)
 
 
 ### Dependencies
@@ -38,15 +38,15 @@ The system is structured into 5 main containers:
 
 
 ## Basic Request-Response Flow
-![Basic Request-Response Sequence Diagram](https://github.com/WilfullMurder/SKITR/blob/main/docs/img/basic_request_flow.svg)
+![Basic Request-Response Sequence Diagram](img/basic_request_flow.svg)
 
 
 ## Error Handling Flow
-![Error Handling Sequence Diagram](https://github.com/WilfullMurder/SKITR/blob/main/docs/img/error_flow.svg)
+![Error Handling Sequence Diagram](img/error_flow.svg)
 
 
 ## Value Parsing Flow
-![Value Parsing Sequence Diagram](https://github.com/WilfullMurder/SKITR/blob/main/docs/img/value_parsing.svg)
+![Value Parsing Sequence Diagram](img/value_parsing.svg)
 
 ## Method Dispatch Flow
-![Method Dispatch Sequence Diagram](https://github.com/WilfullMurder/SKITR/blob/main/docs/img/method_dispatch.svg)
+![Method Dispatch Sequence Diagram](img/method_dispatch.svg)

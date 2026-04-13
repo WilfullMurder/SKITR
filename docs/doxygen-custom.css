@@ -1,0 +1,28 @@
+/* Smaller project logo and header tweaks for Doxygen-generated HTML */
+/* Doxygen places the logo inside a td with id="projectlogo" */
+#projectlogo img {
+    width: 220px !important;
+    max-width: 220px !important;
+    height: auto !important;
+    display: block;
+}
+
+/* Reduce top padding around header */
+#titlearea {
+    padding-top: 8px !important;
+}
+
+/* Add a little spacing between logo and title */
+#projectalign {
+    padding-left: 12px !important;
+}
+
+/* Make sure the logo doesn't push the title off-line on narrow screens */
+@media (max-width: 800px) {
+    #projectlogo img {
+        max-width: 140px !important;
+    }
+    #projectalign {
+        padding-left: 8px !important;
+    }
+}
