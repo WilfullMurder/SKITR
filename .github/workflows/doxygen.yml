@@ -30,41 +30,38 @@
             
             # Fail early if output missing
             test -d docs/html || (echo "docs/html not generated!" && exit 1)
+            
 
         - name: Deploy to docs branch
           env:
             GITHUB_TOKEN: ${{ secrets.SITE_DEPLOY_TOKEN }}
           run: |
             set -e
-            
+             
             # Configure git
-            git config --global user.name "github-actions[bot]"
-            git config --global user.email "github-actions[bot]@users.noreply.github.com"
-            
-            # Prepare clean deploy dir
-            rm -rf /tmp/deploy
-            mkdir -p /tmp/deploy
-            cd /tmp/deploy
-            
-            # Init fresh repo
-            git init
-            git checkout -b docs
-            
-            # Copy generated docs (robust + quiet)
-            rsync -a --delete "$GITHUB_WORKSPACE/docs/html/" . || true
-            
-            # GitHub Pages compatibility
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+              
+            # Save generated docs OUTSIDE git state
+            BUILD_DIR="$(pwd)"
+            DOCS_DIR="$BUILD_DIR/docs/html"
+              
+            # Switch to orphan branch
+            git checkout --orphan docs
+              
+            # Remove everything tracked
+            git rm -rf . || true
+              
+            # Copy generated docs
+            rsync -a "$DOCS_DIR/" ./
+              
+            # GitHub Pages requirement
             touch .nojekyll
-            
-            # Optional: landing redirect (root → index.html)
-            if [ ! -f index.html ]; then
-              echo '<meta http-equiv="refresh" content="0; url=./index.html">' > index.html
-            fi
-            
-            # Commit (only if changes exist)
+              
+            # Commit only if changes exist
             git add -A
             git diff --cached --quiet || git commit -m "Update Doxygen docs from main@${GITHUB_SHA}"
-            
-            # Push (force overwrite docs branch)
-            git remote add origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}
+              
+            # Force push
+            git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}
             git push --force origin docs
