@@ -32,16 +32,23 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Create a temporary worktree for the docs branch
+  
           git fetch origin
-          # If docs branch doesn't exist, create an orphan branch
-          if git show-ref --verify --quiet refs/heads/docs; then
-            git worktree add /tmp/docs docs
+          
+          # Create worktree properly
+          if git ls-remote --exit-code --heads origin docs; then
+          git worktree add /tmp/docs docs
+          cd /tmp/docs
+          git pull origin docs
           else
-            git worktree add -B docs /tmp/docs
+          git worktree add -b docs /tmp/docs
+          cd /tmp/docs
           fi
-          rsync -a --delete docs/html/ /tmp/docs/
-          pushd /tmp/docs
+          
+          # Copy generated docs
+          rsync -a --delete "$GITHUB_WORKSPACE/docs/html/" .
+          
+          # Commit & push
           git add -A
           git commit -m "Update Doxygen docs from main@${GITHUB_SHA}" || echo "No changes to commit"
-          git push origin HEAD:refs/heads/docs
+          git push origin docs
