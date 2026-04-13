@@ -35,15 +35,14 @@ jobs:
   
           git fetch origin
           
-          # Create worktree properly
+          # Create worktree from remote if exists
           if git ls-remote --exit-code --heads origin docs; then
-          git worktree add /tmp/docs docs
-          cd /tmp/docs
-          git pull origin docs
+          git worktree add /tmp/docs origin/docs
           else
           git worktree add -b docs /tmp/docs
-          cd /tmp/docs
           fi
+          
+          cd /tmp/docs
           
           # Copy generated docs
           rsync -a --delete "$GITHUB_WORKSPACE/docs/html/" .
@@ -51,4 +50,4 @@ jobs:
           # Commit & push
           git add -A
           git commit -m "Update Doxygen docs from main@${GITHUB_SHA}" || echo "No changes to commit"
-          git push origin docs
+          git push origin HEAD:docs
