@@ -1,4 +1,3 @@
-  ```yaml
   name: Doxygen
 
   on:
@@ -69,4 +68,3 @@
             # Push (force overwrite docs branch)
             git remote add origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}
             git push --force origin docs
-    ```
