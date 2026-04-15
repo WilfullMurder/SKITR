@@ -143,7 +143,6 @@ namespace skitter {
             return ptr ? *ptr : empty_object;
         }
 
-        // TODO: Implement the following functions
         Value::binary_t &Value::asBinary() {
             if(!isBinary()) throw std::runtime_error("Value::asBinary: type is " + typeName(type_));
             return std::get<binary_t>(storage_);
@@ -266,7 +265,7 @@ namespace skitter {
                 case Type::DateTime: {
                     auto tp = std::get<datetime_t>(storage_);
                     std::time_t t = std::chrono::system_clock::to_time_t(tp);
-                    os << '"' << std::put_time(std::localtime(&t)) << "";
+                    os << '"' << std::asctime(std::localtime(&t)) << "";
                     break;
                 }
             }
