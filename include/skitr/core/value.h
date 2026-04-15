@@ -8,6 +8,7 @@
 #include <memory>
 #include <variant>
 #include <stdexcept>
+#include <chrono>
 
 #include <skitr/skitr_export.h>
 
@@ -57,121 +58,103 @@ namespace skitter {
             /**
              * @brief Default constructs a Null Value.
              */
-            Value() noexcept : type_(Type::Null), storage_(std::monostate{}) {}
-
-            /**
-             * @brief Default constructs a Null Value.
-             */
-            Value() noexcept : type_(Type::Null), storage_(std::monostate{}) {}
+            Value() noexcept;
 
             /**
              * @brief Construct a boolean Value.
              * @param b boolean payload
              */
-            Value(bool b) : type_(Type::Bool), storage_(b) {}
+            Value(bool b);
 
             /**
              * @brief Construct an integer Value (int64_t).
              * @param i integer payload
              */
-            Value(int64_t i) : type_(Type::Int), storage_(i) {}
+            Value(int64_t i);
 
             /**
              * @brief Construct from int by promoting to int64_t.
              * @param i integer payload
              */
-            Value(int i) : Value(static_cast<int64_t>(i)) {}
+            Value(int i);
 
             /**
              * @brief Construct a double Value.
              * @param d floating point payload
              */
-            Value(double d) : type_(Type::Double), storage_(d) {}
+            Value(double d);
 
             /**
              * @brief Construct a string Value from const reference.
              * @param s string payload
              */
-            Value(const std::string &s) : type_(Type::String), storage_(s) {}
+            Value(const std::string &s);
 
             /**
              * @brief Construct a string Value by moving.
              * @param s string payload (moved)
              */
-            Value(std::string &&s) : type_(Type::String), storage_(std::move(s)) {}
+            Value(std::string &&s);
 
             /**
              * @brief Construct a string Value from C-string.
              * @param s null-terminated C string
              */
-            Value(const char *s) : type_(Type::String), storage_(std::string(s)) {}
+            Value(const char *s);
 
             /**
              * @brief Construct an array Value from const reference.
              * @param a array payload
              */
-            Value(const array_t &a) : type_(Type::Array), storage_(std::make_shared<array_t>(a)) {}
+            Value(const array_t &a);
 
             /**
              * @brief Construct an array Value by moving.
              * @param a array payload (moved)
              */
-            Value(array_t &&a) : type_(Type::Array), storage_(std::make_shared<array_t>(std::move(a))) {}
+            Value(array_t &&a);
 
             /**
              * @brief Construct an object Value from const reference.
              * @param o object payload
              */
-            Value(const object_t &o) : type_(Type::Object), storage_(std::make_shared<object_t>(o)) {}
+            Value(const object_t &o);
 
             /**
              * @brief Construct an object Value by moving.
              * @param o object payload (moved)
              */
-            Value(object_t &&o) : type_(Type::Object), storage_(std::make_shared<object_t>(std::move(o))) {}
+            Value(object_t &&o);
 
             /**
              * @brief Construct a binary Value from const reference.
              * @param b binary payload
              */
-            Value(const binary_t &b) : type_(Type::Binary), storage_(b) {}
+            Value(const binary_t &b);
 
             /**
              * @brief Construct a binary Value by moving.
              * @param b binary payload (moved)
              */
-            Value(binary_t &&b) : type_(Type::Binary), storage_(std::move(b)) {}
+            Value(binary_t &&b);
 
             /**
              * @brief Construct a datetime Value.
              * @param dt time_point payload
              */
-            Value(const datetime_t &dt) : type_(Type::DateTime), storage_(dt) {}
+            Value(const datetime_t &dt);
 
             /**
              * @brief Return a human-readable name for a Type.
              * @param t type to stringify
              * @return name of the type
              */
-            static std::string typeName(Type t) noexcept {
-                switch (t) {
-                    case Type::Null: return "Null";
-                    case Type::Bool: return "Bool";
-                    case Type::Int: return "Int";
-                    case Type::Double: return "Double";
-                    case Type::String: return "String";
-                    case Type::Array: return "Array";
-                    case Type::Object: return "Object";
-                    case Type::Binary: return "Binary";
-                    case Type::DateTime: return "DateTime";
-                    default: return "Unknown";
-                }
-            }
+            static std::string typeName(Type t) noexcept;
 
             /**
- * @brief Get the current stored Type.
- * @return the Type of this Value
- */
+             * @brief Get the current stored Type.
+             * @return the Type of this Value
+             */
             Type type() const noexcept;
             /**
              * @brief Checks if this Value is Null.
@@ -342,6 +325,11 @@ namespace skitter {
              * @note This will ensure unique array storage before modifying (COW).
              */
             void pushBack(Value v);
+
+            Value(const Value& other) = default;
+            Value(Value&& other) noexcept = default;
+            Value& operator=(const Value& other) = default;
+            Value& operator=(Value&& other) noexcept = default;
 
             /**
            * @brief Access or create an entry in an object by key.

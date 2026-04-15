@@ -7,6 +7,7 @@
 #include <vector>
 #include <map>
 #include <variant>
+#include <chrono>
 
 namespace skitter {
     namespace core {
@@ -19,6 +20,8 @@ namespace skitter {
                 case Type::String: return "String";
                 case Type::Array: return "Array";
                 case Type::Object: return "Object";
+                case Type::Binary: return "Binary";
+                case Type::DateTime: return "DateTime";
                 default: return "Unknown";
             }
         }
@@ -26,6 +29,7 @@ namespace skitter {
         Value::Value() noexcept: type_(Type::Null), storage_(std::monostate{}) {}
         Value::Value(bool b): type_(Type::Bool), storage_(b) {}
         Value::Value(int64_t i): type_(Type::Int), storage_(i) {}
+        Value::Value(int i): type_(Type::Int), storage_(static_cast<int64_t>(i)) {}
         Value::Value(double d): type_(Type::Double), storage_(d) {}
         Value::Value(const std::string& s): type_(Type::String), storage_(s) {}
         Value::Value(std::string&& s): type_(Type::String), storage_(std::move(s)) {}
@@ -34,47 +38,9 @@ namespace skitter {
         Value::Value(std::vector<Value>&& arr): type_(Type::Array), storage_(std::make_shared<array_t>(std::move(arr))) {}
         Value::Value(const std::map<std::string, Value>& obj): type_(Type::Object), storage_(std::make_shared<object_t>(obj)) {}
         Value::Value(std::map<std::string, Value>&& obj): type_(Type::Object), storage_(std::make_shared<object_t>(std::move(obj))) {}
-
-        Value::Value(const Value& other): type_(other.type_){
-            switch (other.type_) {
-                case Type::Null:
-                    storage_ = std::monostate{};
-                    break;
-                case Type::Bool:
-                    storage_ = std::get<bool>(other.storage_);
-                    break;
-                case Type::Int:
-                    storage_ = std::get<int64_t>(other.storage_);
-                    break;
-                case Type::Double:
-                    storage_ = std::get<double>(other.storage_);
-                    break;
-                case Type::String:
-                    storage_ = std::get<std::string>(other.storage_);
-                    break;
-                case Type::Array: {
-                    auto p = std::get<array_ptr>(other.storage_);
-                    storage_ = std::make_shared<array_t>(p ? *p : array_t{});
-                    break;
-                }
-                case Type::Object: {
-                    auto p = std::get<object_ptr>(other.storage_);
-                    storage_ = std::make_shared<object_t>(p ? *p : object_t{});
-                    break;
-                }
-            }
-        }
-        Value::Value(Value&& other) noexcept: type_(other.type_), storage_(std::move(other.storage_)) {
-            other.type_ = Type::Null;
-            other.storage_ = std::monostate{};
-        }
-
-        Value& Value::operator=(const Value& other) {
-            if (this == &other) return *this;
-            Value tmp(other);
-            *this = std::move(tmp);
-            return *this;
-        }
+        Value::Value(const binary_t& b): type_(Type::Binary), storage_(b) {}
+        Value::Value(binary_t&& b): type_(Type::Binary), storage_(std::move(b)) {}
+        Value::Value(const datetime_t& dt): type_(Type::DateTime), storage_(dt) {}
 
         Type Value::type() const noexcept { return type_; }
         bool Value::isNull() const noexcept { return type_ == Type::Null; }
