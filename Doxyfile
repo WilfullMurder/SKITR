@@ -4,7 +4,7 @@
 PROJECT_NAME           = "SKITR"
 PROJECT_BRIEF          = ""
 PROJECT_LOGO           = docs/img/SKITR_logo.png
-PROJECT_NUMBER         = "v0.1.2"
+PROJECT_NUMBER         = "v0.2.0"
 
 OUTPUT_DIRECTORY       = docs
 CREATE_SUBDIRS         = NO
@@ -19,8 +19,8 @@ IMAGE_PATH             = docs/img
 
 # Build
 EXTRACT_ALL            = YES
-EXTRACT_PRIVATE        = NO
-EXTRACT_STATIC         = NO
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
 
 # Source browsing
 SOURCE_BROWSER         = YES
