@@ -272,6 +272,12 @@ namespace skitter {
              * @note May promote Null to DateTime when used as non-const accessor.
              */
             datetime_t &asDateTime();
+            /**
+            * @brief Get const reference to datetime payload.
+            * @return const reference to stored time_point
+            * @throws std::bad_variant_access if not DateTime
+            */
+            const datetime_t &asDateTime() const;
 
             /**
              * @brief Set this Value to Null.

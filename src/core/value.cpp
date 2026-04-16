@@ -119,8 +119,13 @@ namespace skitter {
             return std::get<binary_t>(storage_);
         }
 
-        std::chrono::system_clock::time_point &Value::asDateTime() {
+        Value::datetime_t &Value::asDateTime() {
             if(!isDateTime()) throw std::runtime_error("Value::asDateTime: type is " + typeName(type_));
+            return std::get<datetime_t>(storage_);
+        }
+
+        const Value::datetime_t& Value::asDateTime() const {
+            if (!isDateTime()) throw std::runtime_error("Value::asDateTime: type is " + typeName(type_));
             return std::get<datetime_t>(storage_);
         }
 
@@ -276,5 +281,7 @@ namespace skitter {
                 ptr = std::make_shared<object_t>(*ptr);
             }
         }
+
+
     } // namespace core
 } // namespace skitter
