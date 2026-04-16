@@ -1,0 +1,17 @@
+<map id="skitter::core::Value::operator[]" name="skitter::core::Value::operator[]">
+<area shape="rect" id="Node000001" title="Access or create an entry in an object by key." alt="" coords="5,241,149,281"/>
+<area shape="rect" id="Node000002" href="$classskitter_1_1core_1_1Value.html#af438b725fff5bcdf4ccb59864d9847e0" title="Get mutable reference to object payload." alt="" coords="197,120,341,160"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,239,224,165,227,170,111,244"/>
+<area shape="rect" id="Node000004" href="$classskitter_1_1core_1_1Value.html#a832b3042deada688d2dae5f101502210" title="Checks if this Value is an Object." alt="" coords="600,63,744,103"/>
+<area shape="poly" id="edge7_Node000001_Node000004" title=" " alt="" coords="149,262,251,264,368,263,476,253,519,245,551,234,585,209,614,178,637,145,653,114,658,117,641,148,618,181,588,213,553,238,521,250,477,259,368,268,251,270,149,267"/>
+<area shape="rect" id="Node000007" href="$classskitter_1_1core_1_1Value.html#aa9fb7af6be0c8be4c1c1993ddcadd161" title="Set object payload from const reference." alt="" coords="197,299,341,339"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="146,279,189,292,188,297,144,284"/>
+<area shape="rect" id="Node000003" href="$classskitter_1_1core_1_1Value.html#a5763640d40a2979d558ec11d1a76e985" title="Ensure the internal object is uniquely owned before mutating." alt="" coords="389,5,552,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="298,118,388,62,412,49,414,54,391,66,301,122"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="337,117,389,105,491,91,586,84,586,89,492,97,390,111,338,122"/>
+<area shape="rect" id="Node000005" href="$classskitter_1_1core_1_1Value.html#ac71181636cfc123cc04f96c2e8d97605" title="Checks if this Value is Null." alt="" coords="399,120,543,160"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="342,137,385,137,385,143,342,143"/>
+<area shape="rect" id="Node000006" href="$classskitter_1_1core_1_1Value.html#ad5dbec6c292f6f1073ca51430f998ccd" title="Return a human&#45;readable name for a Type." alt="" coords="399,184,543,224"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="334,158,395,177,393,182,332,163"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="542,43,589,56,588,61,541,48"/>
+</map>

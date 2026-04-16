@@ -1,0 +1,3 @@
+<map id="skitter::transport::Server" name="skitter::transport::Server">
+<area shape="rect" id="Node000001" title="A simple TCP server that listens for incoming connections and processes JSON&#45;RPC requests using a Dis..." alt="" coords="5,5,191,293"/>
+</map>

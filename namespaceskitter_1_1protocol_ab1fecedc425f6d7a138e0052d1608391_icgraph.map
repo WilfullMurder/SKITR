@@ -1,0 +1,9 @@
+<map id="skitter::protocol::from_json_request" name="skitter::protocol::from_json_request">
+<area shape="rect" id="Node000001" title="Deserializes a JSON string into an RpcRequest object according to the JSON&#45;RPC 2.0 specification." alt="" coords="721,5,864,45"/>
+<area shape="rect" id="Node000002" href="$structskitter_1_1transport_1_1Server_1_1Impl.html#aa257e8312a94d6629623707d3913f94d" title=" " alt="" coords="439,5,673,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="708,28,673,28,673,23,708,23"/>
+<area shape="rect" id="Node000003" href="$structskitter_1_1transport_1_1Server_1_1Impl.html#addab4d5257dbed5f1c4cbebaca4d5179" title=" " alt="" coords="200,5,391,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="425,28,391,28,391,23,425,23"/>
+<area shape="rect" id="Node000004" href="$structskitter_1_1transport_1_1Server_1_1Impl.html#a81ae0539f6b17defa137cf85b2e24032" title=" " alt="" coords="5,5,152,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="186,28,152,28,152,23,186,23"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="skitter::core::Value::asObject" name="skitter::core::Value::asObject">
+<area shape="rect" id="Node000001" title="Get mutable reference to object payload." alt="" coords="5,92,149,132"/>
+<area shape="rect" id="Node000002" href="$classskitter_1_1core_1_1Value.html#a5763640d40a2979d558ec11d1a76e985" title="Ensure the internal object is uniquely owned before mutating." alt="" coords="197,5,360,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,89,218,48,220,53,126,94"/>
+<area shape="rect" id="Node000003" href="$classskitter_1_1core_1_1Value.html#a832b3042deada688d2dae5f101502210" title="Checks if this Value is an Object." alt="" coords="408,35,552,75"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="149,99,394,64,395,69,150,104"/>
+<area shape="rect" id="Node000004" href="$classskitter_1_1core_1_1Value.html#ac71181636cfc123cc04f96c2e8d97605" title="Checks if this Value is Null." alt="" coords="207,120,351,160"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="150,119,193,125,192,131,149,125"/>
+<area shape="rect" id="Node000005" href="$classskitter_1_1core_1_1Value.html#ad5dbec6c292f6f1073ca51430f998ccd" title="Return a human&#45;readable name for a Type." alt="" coords="207,184,351,224"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="117,130,198,170,213,176,211,181,196,174,115,134"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="361,35,395,40,394,45,360,40"/>
+</map>

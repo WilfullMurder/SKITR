@@ -1,0 +1,48 @@
+<map id="skitter::protocol::to_json" name="skitter::protocol::to_json">
+<area shape="rect" id="Node000001" title="Serializes an RpcResponse to a JSON string according to the JSON&#45;RPC 2.0 specification." alt="" coords="5,342,139,382"/>
+<area shape="rect" id="Node000002" href="$namespaceskitter_1_1protocol.html#af5264d6627dabb890b47a671c9c1ced1" title=" " alt="" coords="187,342,320,382"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,359,173,359,173,365,139,365"/>
+<area shape="poly" id="edge27_Node000002_Node000002" title=" " alt="" coords="219,342,217,332,222,323,235,317,253,315,275,318,287,325,284,330,273,323,253,321,236,322,226,327,222,333,224,341"/>
+<area shape="rect" id="Node000003" href="$classskitter_1_1core_1_1Value.html#a3678f9bd15db8fa9e0792645651af29c" title="Get mutable reference to array payload." alt="" coords="368,99,512,139"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="266,340,366,200,409,148,413,152,370,203,270,343"/>
+<area shape="rect" id="Node000008" href="$classskitter_1_1core_1_1Value.html#aea52bc76e9958936ecfea207534b0dad" title="Retrieve boolean payload." alt="" coords="368,278,512,318"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="312,339,368,320,369,325,313,344"/>
+<area shape="rect" id="Node000010" href="$classskitter_1_1core_1_1Value.html#a714c4448dd82b2802877ee6acfe143c4" title="Retrieve double payload." alt="" coords="368,342,512,382"/>
+<area shape="poly" id="edge11_Node000002_Node000010" title=" " alt="" coords="320,359,354,359,354,365,320,365"/>
+<area shape="rect" id="Node000012" href="$classskitter_1_1core_1_1Value.html#a40c5863401f9be1667e9d9d8bb9302cf" title="Retrieve integer payload." alt="" coords="368,406,512,446"/>
+<area shape="poly" id="edge14_Node000002_Node000012" title=" " alt="" coords="313,379,369,399,368,404,312,384"/>
+<area shape="rect" id="Node000014" href="$classskitter_1_1core_1_1Value.html#af438b725fff5bcdf4ccb59864d9847e0" title="Get mutable reference to object payload." alt="" coords="368,214,512,254"/>
+<area shape="poly" id="edge17_Node000002_Node000014" title=" " alt="" coords="273,340,315,302,367,264,376,258,379,263,369,268,318,306,277,344"/>
+<area shape="rect" id="Node000017" href="$classskitter_1_1core_1_1Value.html#a4eb0aa7506a5dbd04edb0a5eac11f5a0" title="Retrieve const reference to string payload." alt="" coords="368,470,512,510"/>
+<area shape="poly" id="edge23_Node000002_Node000017" title=" " alt="" coords="277,380,318,417,369,456,379,461,376,466,367,460,315,422,273,384"/>
+<area shape="rect" id="Node000019" href="$classskitter_1_1core_1_1Value.html#a0f039b6513797993c638a9fa0fd4d03f" title="Get the current stored Type." alt="" coords="368,534,512,574"/>
+<area shape="poly" id="edge26_Node000002_Node000019" title=" " alt="" coords="267,381,307,448,336,486,370,520,376,525,373,529,366,524,332,489,302,451,262,384"/>
+<area shape="rect" id="Node000004" href="$classskitter_1_1core_1_1Value.html#a6ce2465b448498ca7c24242a2930a635" title="Ensure the internal array is uniquely owned before mutating." alt="" coords="564,35,719,75"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="503,97,564,77,566,82,504,102"/>
+<area shape="rect" id="Node000005" href="$classskitter_1_1core_1_1Value.html#a8005a724e842e39b113ec9d75be41a66" title="Checks if this Value is an Array." alt="" coords="771,7,915,47"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="456,97,499,56,528,36,559,21,609,8,661,3,711,4,757,8,757,14,711,9,661,9,610,13,561,26,530,40,503,60,460,101"/>
+<area shape="rect" id="Node000006" href="$classskitter_1_1core_1_1Value.html#ac71181636cfc123cc04f96c2e8d97605" title="Checks if this Value is Null." alt="" coords="569,99,713,139"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="512,117,555,117,555,122,512,122"/>
+<area shape="rect" id="Node000007" href="$classskitter_1_1core_1_1Value.html#ad5dbec6c292f6f1073ca51430f998ccd" title="Return a human&#45;readable name for a Type." alt="" coords="569,342,713,382"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="464,138,490,166,514,201,529,237,534,269,541,298,549,313,562,328,566,332,563,336,558,332,545,316,536,300,529,270,524,239,510,203,486,169,460,141"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="719,42,756,36,757,42,719,47"/>
+<area shape="poly" id="edge10_Node000008_Node000007" title=" " alt="" coords="504,315,566,335,564,340,503,320"/>
+<area shape="rect" id="Node000009" href="$classskitter_1_1core_1_1Value.html#a47b5c52aae3646bcc5b6514f6cc93125" title="Checks if this Value is a Bool." alt="" coords="569,278,713,318"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="512,295,555,295,555,301,512,301"/>
+<area shape="poly" id="edge13_Node000010_Node000007" title=" " alt="" coords="512,359,555,359,555,365,512,365"/>
+<area shape="rect" id="Node000011" href="$classskitter_1_1core_1_1Value.html#a449a489960390d96abff06607d0ce595" title="Checks if this Value is a Double." alt="" coords="569,406,713,446"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="504,379,566,399,564,404,503,384"/>
+<area shape="poly" id="edge16_Node000012_Node000007" title=" " alt="" coords="503,403,564,384,566,389,504,408"/>
+<area shape="rect" id="Node000013" href="$classskitter_1_1core_1_1Value.html#a0ba0d64df67a44f0d21b4a26df8526a2" title="Checks if this Value is an Int." alt="" coords="569,470,713,510"/>
+<area shape="poly" id="edge15_Node000012_Node000013" title=" " alt="" coords="504,443,566,463,564,468,503,448"/>
+<area shape="poly" id="edge20_Node000014_Node000006" title=" " alt="" coords="469,212,559,156,582,143,585,148,561,160,472,216"/>
+<area shape="poly" id="edge22_Node000014_Node000007" title=" " alt="" coords="495,252,514,264,529,281,538,297,547,312,562,328,569,333,566,337,558,332,542,315,533,299,525,284,510,268,492,256"/>
+<area shape="rect" id="Node000015" href="$classskitter_1_1core_1_1Value.html#a5763640d40a2979d558ec11d1a76e985" title="Ensure the internal object is uniquely owned before mutating." alt="" coords="560,214,723,254"/>
+<area shape="poly" id="edge18_Node000014_Node000015" title=" " alt="" coords="512,231,547,231,547,237,512,237"/>
+<area shape="rect" id="Node000016" href="$classskitter_1_1core_1_1Value.html#a832b3042deada688d2dae5f101502210" title="Checks if this Value is an Object." alt="" coords="771,185,915,225"/>
+<area shape="poly" id="edge21_Node000014_Node000016" title=" " alt="" coords="503,211,560,199,662,193,757,195,757,200,662,198,560,204,504,216"/>
+<area shape="poly" id="edge19_Node000015_Node000016" title=" " alt="" coords="723,219,756,214,757,220,723,225"/>
+<area shape="poly" id="edge25_Node000017_Node000007" title=" " alt="" coords="492,468,510,456,525,440,533,424,542,408,558,392,566,386,569,391,562,396,547,411,538,427,529,443,514,460,495,472"/>
+<area shape="rect" id="Node000018" href="$classskitter_1_1core_1_1Value.html#a0ac6371c7aa04361b1926fe1efe51206" title="Checks if this Value is a String." alt="" coords="569,534,713,574"/>
+<area shape="poly" id="edge24_Node000017_Node000018" title=" " alt="" coords="504,507,566,527,564,532,503,512"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="skitter::core::Value::isBinary" name="skitter::core::Value::isBinary">
+<area shape="rect" id="Node000001" title="Checks if this Value is Binary." alt="" coords="197,37,341,77"/>
+<area shape="rect" id="Node000002" href="$classskitter_1_1core_1_1Value.html#aad7e08d552eaeb34b557d75c55eca5df" title="Get mutable reference to binary payload." alt="" coords="5,5,149,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,46,149,40,150,35,184,40"/>
+<area shape="rect" id="Node000003" href="$classskitter_1_1core_1_1Value.html#a839fa46a1adb44803fad5d9ccbd3a05a" title="Get const reference to binary payload." alt="" coords="5,69,149,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="184,74,150,80,149,75,183,69"/>
+</map>

@@ -1,0 +1,21 @@
+<map id="include/skitr/core/value.h" name="include/skitr/core/value.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="313,5,447,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,93,72,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="313,44,86,96,85,90,312,39"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="96,93,155,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="320,48,169,94,167,89,318,43"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="179,93,242,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="341,48,249,90,247,85,338,43"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="267,93,317,119"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="360,48,317,86,314,82,357,44"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="341,93,419,119"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="383,46,383,79,377,79,377,46"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="443,93,511,119"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="405,43,454,82,451,87,402,48"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="535,93,622,119"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="429,43,538,86,536,91,427,48"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="647,93,713,119"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="448,42,634,90,633,95,447,47"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="738,93,883,119"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="448,36,735,88,734,94,447,42"/>
+</map>

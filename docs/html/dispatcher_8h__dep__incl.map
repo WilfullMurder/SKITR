@@ -1,0 +1,13 @@
+<map id="include/skitr/runtime/dispatcher.h" name="include/skitr/runtime/dispatcher.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="141,5,298,45"/>
+<area shape="rect" id="Node000002" href="$server_8h.html" title=" " alt="" coords="77,93,242,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,58,175,95,170,92,196,55"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html" title=" " alt="" coords="5,181,111,207"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="129,50,94,68,67,95,57,116,54,140,58,181,53,181,49,140,52,115,62,92,91,64,126,45"/>
+<area shape="rect" id="Node000004" href="$server_8cpp.html" title=" " alt="" coords="172,181,347,207"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="241,56,257,93,263,141,263,181,258,181,258,142,251,94,236,58"/>
+<area shape="rect" id="Node000005" href="$dispatcher_8cpp.html" title=" " alt="" coords="317,101,511,126"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="276,49,389,98,387,103,274,53"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="126,144,75,183,72,179,122,140"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="196,140,246,179,243,183,193,144"/>
+</map>

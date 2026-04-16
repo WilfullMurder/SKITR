@@ -1,0 +1,19 @@
+<map id="include/skitr" name="include/skitr">
+<area shape="rect" id="node2" href="dir_c0cb37b1a2c60c84cc7583db42f54abd.html" title="core" alt="" coords="75,283,125,308"/>
+<area shape="rect" id="node3" href="dir_6cbb47b9196ee6a8c54588c33821416c.html" title="protocol" alt="" coords="160,209,235,235"/>
+<area shape="poly" id="edge1" href="dir_000004_000000.html" alt="" coords="183,237,129,276,126,272,180,233"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000004_000000.html" title="1" alt="" coords="131,271,140,286"/>
+<area shape="rect" id="node4" href="dir_d7862b84618830962d5b0125af95cf26.html" title="registry" alt="" coords="64,209,136,235"/>
+<area shape="poly" id="edge2" href="dir_000006_000000.html" alt="" coords="103,235,103,269,97,269,97,235"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000006_000000.html" title="1" alt="" coords="104,257,113,272"/>
+<area shape="rect" id="node5" href="dir_a49b1641f1b5cd0da2465b6ca2b31fb8.html" title="runtime" alt="" coords="53,136,126,161"/>
+<area shape="poly" id="edge3" href="dir_000008_000000.html" alt="" coords="80,163,59,195,53,215,55,234,65,253,79,271,74,274,60,256,49,235,47,214,54,193,76,160"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000008_000000.html" title="1" alt="" coords="75,256,84,271"/>
+<area shape="poly" id="edge4" href="dir_000008_000006.html" alt="" coords="94,161,99,195,94,196,88,162"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000008_000006.html" title="1" alt="" coords="99,183,109,197"/>
+<area shape="rect" id="node6" href="dir_85fa1aa43fa1d077e02360787452a8db.html" title="transport" alt="" coords="49,63,130,88"/>
+<area shape="poly" id="edge5" href="dir_000012_000008.html" alt="" coords="92,88,92,122,87,122,87,88"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000012_000008.html" title="1" alt="" coords="93,110,102,125"/>
+<area shape="rect" id="clust2" href="dir_dba4fdb32fa6c4a18c8059a801bf742e.html" alt="" coords="27,52,245,319"/>
+<area shape="rect" id="clust1" href="dir_d44c64559bbebec7f509842c48db8b23.html" title="include" alt="" coords="16,16,256,329"/>
+</map>

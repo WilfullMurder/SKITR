@@ -1,0 +1,5 @@
+<map id="skitter::runtime::Dispatcher" name="skitter::runtime::Dispatcher">
+<area shape="rect" id="Node000001" title="The Dispatcher class is responsible for routing incoming RPC requests to the appropriate method handl..." alt="" coords="5,484,216,663"/>
+<area shape="rect" id="Node000002" href="$classskitter_1_1registry_1_1MethodRegistry.html" title="A thread&#45;safe registry for JSON&#45;RPC method handlers." alt="" coords="11,5,210,421"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,421,113,468,108,468,108,421"/>
+</map>

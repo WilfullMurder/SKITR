@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['id_0',['id',['../structskitter_1_1core_1_1RpcRequest.html#a844ee806eff7618d0a71a7fcfd5e8c3c',1,'skitter::core::RpcRequest::id'],['../structskitter_1_1core_1_1RpcResponse.html#a0f35ea730271df6cef36d6a056917275',1,'skitter::core::RpcResponse::id']]],
+  ['impl_1',['impl',['../structskitter_1_1transport_1_1Server_1_1Impl.html#a25dd24bc98fb95a3c942c8038e1e820b',1,'skitter::transport::Server::Impl::Impl()'],['../structskitter_1_1transport_1_1Server_1_1Impl.html',1,'skitter::transport::Server::Impl']]],
+  ['impl_5f_2',['impl_',['../classskitter_1_1transport_1_1Server.html#a50af92b15d2ddd29e69836da420f6df5',1,'skitter::transport::Server']]],
+  ['in_20your_20project_3',['Using SKITR in your project',['../index.html#autotoc_md14',1,'']]],
+  ['instructions_4',['Build Instructions',['../index.html#autotoc_md13',1,'']]],
+  ['int_5',['Int',['../namespaceskitter_1_1core.html#a0bc4bd0cca7f9b4d999c7760d3dba29ca1686a6c336b71b36d77354cea19a8b52',1,'skitter::core']]],
+  ['internalerror_6',['InternalError',['../error_8h.html#a1f0406b8f433c179ac8d144e46068d1e',1,'error.h']]],
+  ['invalidparams_7',['InvalidParams',['../error_8h.html#adbd0067c3a525efc89eb942feb936447',1,'error.h']]],
+  ['invalidrequest_8',['InvalidRequest',['../error_8h.html#ad2f60104cc3a191a3608b61ed9b5204a',1,'error.h']]],
+  ['io_5fctx_5f_9',['io_ctx_',['../structskitter_1_1transport_1_1Server_1_1Impl.html#ac6d15436b3e992720d1961977dc3cc5d',1,'skitter::transport::Server::Impl']]],
+  ['io_5fthread_5f_10',['io_thread_',['../structskitter_1_1transport_1_1Server_1_1Impl.html#aa00e174aa5c5e17137529da8cc1eb93f',1,'skitter::transport::Server::Impl']]],
+  ['is_5frunning_5f_11',['is_running_',['../structskitter_1_1transport_1_1Server_1_1Impl.html#a79964b64ba84713746585817b3fafabb',1,'skitter::transport::Server::Impl']]],
+  ['isarray_12',['isArray',['../classskitter_1_1core_1_1Value.html#a8005a724e842e39b113ec9d75be41a66',1,'skitter::core::Value']]],
+  ['isbinary_13',['isBinary',['../classskitter_1_1core_1_1Value.html#a9d8b2a54f7ac673f7ed237b077f7b28b',1,'skitter::core::Value']]],
+  ['isbool_14',['isBool',['../classskitter_1_1core_1_1Value.html#a47b5c52aae3646bcc5b6514f6cc93125',1,'skitter::core::Value']]],
+  ['isdatetime_15',['isDateTime',['../classskitter_1_1core_1_1Value.html#a6183a84d9ff184c76d9ddfb02181d221',1,'skitter::core::Value']]],
+  ['isdouble_16',['isDouble',['../classskitter_1_1core_1_1Value.html#a449a489960390d96abff06607d0ce595',1,'skitter::core::Value']]],
+  ['isint_17',['isInt',['../classskitter_1_1core_1_1Value.html#a0ba0d64df67a44f0d21b4a26df8526a2',1,'skitter::core::Value']]],
+  ['isnotification_18',['isNotification',['../structskitter_1_1core_1_1RpcRequest.html#aace3ea9a85bd0765c6d2cc707b0bad9b',1,'skitter::core::RpcRequest']]],
+  ['isnull_19',['isNull',['../classskitter_1_1core_1_1Value.html#ac71181636cfc123cc04f96c2e8d97605',1,'skitter::core::Value']]],
+  ['isobject_20',['isObject',['../classskitter_1_1core_1_1Value.html#a832b3042deada688d2dae5f101502210',1,'skitter::core::Value']]],
+  ['isstring_21',['isString',['../classskitter_1_1core_1_1Value.html#a0ac6371c7aa04361b1926fe1efe51206',1,'skitter::core::Value']]],
+  ['isvalid_22',['isValid',['../structskitter_1_1core_1_1RpcResponse.html#a67f38257f9d44e6cc6a4a1869bcadeaf',1,'skitter::core::RpcResponse']]]
+];

@@ -1,0 +1,32 @@
+<map id="include/skitr/registry/method_registry.h" name="include/skitr/registry/method_registry.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="309,5,465,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,167,151,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="350,48,115,163,113,158,348,43"/>
+<area shape="rect" id="Node000003" href="$value_8h.html" title=" " alt="" coords="320,93,455,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="390,46,390,79,385,79,385,46"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="175,167,234,192"/>
+<area shape="poly" id="edge12_Node000001_Node000005" title=" " alt="" coords="360,48,294,95,227,158,223,155,291,91,357,43"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="259,167,321,192"/>
+<area shape="poly" id="edge16_Node000001_Node000006" title=" " alt="" coords="358,48,333,68,311,95,299,124,294,153,289,152,294,122,306,92,329,65,355,43"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="479,93,603,119"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="425,43,507,85,505,89,423,48"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="627,93,713,119"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="456,43,616,87,615,92,454,48"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="738,93,802,119"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="466,38,725,90,724,96,465,43"/>
+<area shape="poly" id="edge11_Node000003_Node000002" title=" " alt="" coords="338,121,142,166,141,161,337,116"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="639,167,706,192"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="434,116,627,164,625,169,433,121"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="359,121,248,164,246,159,357,116"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="373,121,319,160,316,156,370,117"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="730,167,781,192"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="455,114,574,134,717,164,716,169,573,139,455,120"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="805,167,882,192"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="455,114,792,164,791,169,454,120"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="345,167,413,192"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="389,119,385,153,379,153,383,119"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="437,167,524,192"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="404,117,456,156,453,160,401,121"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="549,167,615,192"/>
+<area shape="poly" id="edge10_Node000003_Node000011" title=" " alt="" coords="420,116,538,159,537,164,418,121"/>
+</map>

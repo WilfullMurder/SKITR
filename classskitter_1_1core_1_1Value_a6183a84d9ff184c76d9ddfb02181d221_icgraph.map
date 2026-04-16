@@ -1,0 +1,7 @@
+<map id="skitter::core::Value::isDateTime" name="skitter::core::Value::isDateTime">
+<area shape="rect" id="Node000001" title="Checks if this Value is a DateTime." alt="" coords="197,37,341,77"/>
+<area shape="rect" id="Node000002" href="$classskitter_1_1core_1_1Value.html#a472a547840f3926badd1d19047fe39b5" title="Get mutable reference to datetime payload." alt="" coords="5,5,149,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,46,149,40,150,35,184,40"/>
+<area shape="rect" id="Node000003" href="$classskitter_1_1core_1_1Value.html#a9dca512aff4b2f938b5ec66e4bb4f5b6" title="Get const reference to datetime payload." alt="" coords="5,69,149,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="184,74,150,80,149,75,183,69"/>
+</map>

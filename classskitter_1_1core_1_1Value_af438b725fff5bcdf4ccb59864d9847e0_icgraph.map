@@ -1,0 +1,18 @@
+<map id="skitter::core::Value::asObject" name="skitter::core::Value::asObject">
+<area shape="rect" id="Node000001" title="Get mutable reference to object payload." alt="" coords="1095,49,1239,89"/>
+<area shape="rect" id="Node000002" href="$classskitter_1_1core_1_1Value.html#a64b371e896afe7118eb40b5c0f74cb63" title="Access or create an entry in an object by key." alt="" coords="903,5,1047,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1080,52,1046,44,1047,39,1082,47"/>
+<area shape="rect" id="Node000003" href="$namespaceskitter_1_1protocol.html#af5264d6627dabb890b47a671c9c1ced1" title=" " alt="" coords="908,93,1041,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1082,91,1042,101,1041,95,1081,86"/>
+<area shape="poly" id="edge8_Node000003_Node000003" title=" " alt="" coords="1006,81,995,75,975,72,957,74,946,79,942,85,944,92,939,94,937,84,943,75,956,69,975,67,997,70,1009,77"/>
+<area shape="rect" id="Node000004" href="$namespaceskitter_1_1protocol.html#a6b5c5168a0150bc1cccbe7529356a1ba" title="Serializes an RpcRequest to a JSON string according to the JSON&#45;RPC 2.0 specification." alt="" coords="721,61,855,101"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="894,102,855,95,856,90,895,97"/>
+<area shape="rect" id="Node000008" href="$namespaceskitter_1_1protocol.html#a556c0a922e82d5363f45952a0fe3aa21" title="Serializes an RpcResponse to a JSON string according to the JSON&#45;RPC 2.0 specification." alt="" coords="721,125,855,165"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="895,130,856,137,855,131,894,124"/>
+<area shape="rect" id="Node000005" href="$structskitter_1_1transport_1_1Server_1_1Impl.html#aa257e8312a94d6629623707d3913f94d" title=" " alt="" coords="439,61,673,101"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="707,84,674,84,674,79,707,79"/>
+<area shape="rect" id="Node000006" href="$structskitter_1_1transport_1_1Server_1_1Impl.html#addab4d5257dbed5f1c4cbebaca4d5179" title=" " alt="" coords="200,61,391,101"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="425,84,391,84,391,79,425,79"/>
+<area shape="rect" id="Node000007" href="$structskitter_1_1transport_1_1Server_1_1Impl.html#a81ae0539f6b17defa137cf85b2e24032" title=" " alt="" coords="5,61,152,101"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="186,84,152,84,152,79,186,79"/>
+</map>

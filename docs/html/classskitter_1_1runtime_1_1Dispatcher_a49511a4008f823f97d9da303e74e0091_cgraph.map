@@ -1,0 +1,9 @@
+<map id="skitter::runtime::Dispatcher::dispatch" name="skitter::runtime::Dispatcher::dispatch">
+<area shape="rect" id="Node000001" title="Dispatches the given RPC call to the appropriate method handler in the registry and returns the respo..." alt="" coords="5,69,207,109"/>
+<area shape="rect" id="Node000002" href="$namespaceskitter_1_1core.html#afb6c164dee8bd05846ae8d08cd2c9112" title="Factory function for creating standard JSON&#45;RPC 2.0 internal error." alt="" coords="255,5,449,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,67,261,46,262,51,184,72"/>
+<area shape="rect" id="Node000003" href="$namespaceskitter_1_1core.html#a949b0fe9efdf46f6043ba5c0f311f66a" title="Factory function for creating standard JSON&#45;RPC 2.0 invalid request error." alt="" coords="258,69,446,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="207,87,244,87,244,92,207,92"/>
+<area shape="rect" id="Node000004" href="$namespaceskitter_1_1core.html#a81fd377929658dc57c9fb8eef31dae1d" title="Factory function for creating standard JSON&#45;RPC 2.0 method not found error." alt="" coords="255,133,449,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="184,107,262,127,261,132,183,112"/>
+</map>

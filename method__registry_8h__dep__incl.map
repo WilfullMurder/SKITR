@@ -1,0 +1,19 @@
+<map id="include/skitr/registry/method_registry.h" name="include/skitr/registry/method_registry.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="439,5,595,45"/>
+<area shape="rect" id="Node000002" href="$dispatcher_8h.html" title=" " alt="" coords="215,93,373,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="456,53,344,96,342,91,454,48"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html" title=" " alt="" coords="241,269,347,295"/>
+<area shape="poly" id="edge8_Node000001_Node000004" title=" " alt="" coords="535,57,549,94,559,137,558,182,552,204,540,223,527,234,508,244,459,259,347,278,347,273,457,254,506,239,524,230,536,220,547,201,553,181,553,138,544,95,530,59"/>
+<area shape="rect" id="Node000006" href="$dispatcher_8cpp.html" title=" " alt="" coords="331,189,526,214"/>
+<area shape="poly" id="edge10_Node000001_Node000006" title=" " alt="" coords="503,59,437,190,432,187,499,56"/>
+<area shape="rect" id="Node000007" href="$method__registry_8cpp.html" title=" " alt="" coords="601,93,750,133"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="565,50,642,91,639,96,562,54"/>
+<area shape="rect" id="Node000003" href="$server_8h.html" title=" " alt="" coords="91,181,257,221"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="258,144,202,183,199,179,254,139"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="297,147,297,269,291,269,291,147"/>
+<area shape="rect" id="Node000005" href="$server_8cpp.html" title=" " alt="" coords="5,269,180,295"/>
+<area shape="poly" id="edge7_Node000002_Node000005" title=" " alt="" coords="202,122,168,129,135,141,106,159,82,183,73,204,74,227,89,268,84,270,69,228,68,203,77,180,102,154,133,136,167,124,201,116"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="337,139,412,186,409,191,334,143"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="216,227,278,267,275,271,213,231"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="146,233,107,271,103,267,142,229"/>
+</map>

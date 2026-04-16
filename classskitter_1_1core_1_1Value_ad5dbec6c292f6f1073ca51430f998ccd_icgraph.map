@@ -1,0 +1,49 @@
+<map id="skitter::core::Value::typeName" name="skitter::core::Value::typeName">
+<area shape="rect" id="Node000001" title="Return a human&#45;readable name for a Type." alt="" coords="1287,357,1431,397"/>
+<area shape="rect" id="Node000002" href="$classskitter_1_1core_1_1Value.html#a3678f9bd15db8fa9e0792645651af29c" title="Get mutable reference to array payload." alt="" coords="1095,5,1239,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1351,344,1340,285,1319,209,1286,130,1263,93,1237,59,1222,48,1226,43,1241,55,1268,90,1291,127,1324,207,1345,283,1356,343"/>
+<area shape="rect" id="Node000010" href="$classskitter_1_1core_1_1Value.html#ac23404cddadcc129aa713ded2fb320d4" title="Get const reference to array payload." alt="" coords="1095,69,1239,109"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="1347,345,1333,297,1311,238,1279,177,1259,149,1237,123,1221,111,1225,107,1240,119,1264,145,1284,174,1316,236,1338,295,1353,344"/>
+<area shape="rect" id="Node000011" href="$classskitter_1_1core_1_1Value.html#aad7e08d552eaeb34b557d75c55eca5df" title="Get mutable reference to binary payload." alt="" coords="1095,133,1239,173"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="1342,346,1302,268,1272,225,1237,187,1220,176,1223,171,1240,183,1276,222,1306,265,1347,344"/>
+<area shape="rect" id="Node000012" href="$classskitter_1_1core_1_1Value.html#a839fa46a1adb44803fad5d9ccbd3a05a" title="Get const reference to binary payload." alt="" coords="1095,197,1239,237"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="1333,348,1291,299,1237,251,1217,240,1220,235,1240,247,1295,296,1337,345"/>
+<area shape="rect" id="Node000013" href="$classskitter_1_1core_1_1Value.html#aea52bc76e9958936ecfea207534b0dad" title="Retrieve boolean payload." alt="" coords="1095,261,1239,301"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="1308,353,1237,316,1212,304,1215,299,1240,311,1310,348"/>
+<area shape="rect" id="Node000014" href="$classskitter_1_1core_1_1Value.html#a472a547840f3926badd1d19047fe39b5" title="Get mutable reference to datetime payload." alt="" coords="1095,325,1239,365"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="1273,366,1238,360,1239,355,1273,360"/>
+<area shape="rect" id="Node000015" href="$classskitter_1_1core_1_1Value.html#a9dca512aff4b2f938b5ec66e4bb4f5b6" title="Get const reference to datetime payload." alt="" coords="1095,389,1239,429"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="1273,394,1239,400,1238,395,1273,389"/>
+<area shape="rect" id="Node000016" href="$classskitter_1_1core_1_1Value.html#a714c4448dd82b2802877ee6acfe143c4" title="Retrieve double payload." alt="" coords="1095,453,1239,493"/>
+<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="1310,407,1240,444,1215,456,1212,451,1237,439,1308,402"/>
+<area shape="rect" id="Node000017" href="$classskitter_1_1core_1_1Value.html#a40c5863401f9be1667e9d9d8bb9302cf" title="Retrieve integer payload." alt="" coords="1095,517,1239,557"/>
+<area shape="poly" id="edge19_Node000001_Node000017" title=" " alt="" coords="1337,410,1295,459,1240,507,1220,520,1217,515,1237,503,1291,455,1333,407"/>
+<area shape="rect" id="Node000018" href="$classskitter_1_1core_1_1Value.html#af438b725fff5bcdf4ccb59864d9847e0" title="Get mutable reference to object payload." alt="" coords="1095,709,1239,749"/>
+<area shape="poly" id="edge21_Node000001_Node000018" title=" " alt="" coords="1356,411,1345,471,1324,547,1291,627,1268,665,1241,699,1226,711,1222,707,1237,695,1263,662,1286,625,1319,546,1340,470,1351,410"/>
+<area shape="rect" id="Node000020" href="$classskitter_1_1core_1_1Value.html#ad606c6ce113d0851bb153b3d3f3e7623" title="Get const reference to object payload." alt="" coords="1095,645,1239,685"/>
+<area shape="poly" id="edge24_Node000001_Node000020" title=" " alt="" coords="1353,411,1338,460,1316,519,1284,580,1264,609,1240,635,1225,647,1221,643,1237,631,1259,606,1279,578,1311,517,1333,458,1347,410"/>
+<area shape="rect" id="Node000021" href="$classskitter_1_1core_1_1Value.html#a4eb0aa7506a5dbd04edb0a5eac11f5a0" title="Retrieve const reference to string payload." alt="" coords="1095,581,1239,621"/>
+<area shape="poly" id="edge25_Node000001_Node000021" title=" " alt="" coords="1347,411,1306,490,1276,533,1240,571,1223,583,1220,579,1237,567,1272,530,1302,487,1342,409"/>
+<area shape="rect" id="Node000003" href="$classskitter_1_1core_1_1Value.html#aabb50e31ce808c42d4935536563e4c50" title="Append a Value to the array payload." alt="" coords="903,5,1047,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1081,28,1047,28,1047,23,1081,23"/>
+<area shape="rect" id="Node000004" href="$namespaceskitter_1_1protocol.html#af5264d6627dabb890b47a671c9c1ced1" title=" " alt="" coords="908,485,1041,525"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="1100,56,1097,59,1060,112,1031,171,1010,234,996,296,981,408,978,485,973,485,976,408,990,295,1005,232,1026,169,1055,110,1093,56,1096,52"/>
+<area shape="poly" id="edge9_Node000004_Node000004" title=" " alt="" coords="1006,473,995,467,975,464,957,466,946,471,942,477,944,484,939,486,937,476,943,467,956,461,975,459,997,462,1009,469"/>
+<area shape="rect" id="Node000005" href="$namespaceskitter_1_1protocol.html#a6b5c5168a0150bc1cccbe7529356a1ba" title="Serializes an RpcRequest to a JSON string according to the JSON&#45;RPC 2.0 specification." alt="" coords="721,453,855,493"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="894,494,855,487,856,482,895,489"/>
+<area shape="rect" id="Node000009" href="$namespaceskitter_1_1protocol.html#a556c0a922e82d5363f45952a0fe3aa21" title="Serializes an RpcResponse to a JSON string according to the JSON&#45;RPC 2.0 specification." alt="" coords="721,517,855,557"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="895,522,856,529,855,523,894,516"/>
+<area shape="rect" id="Node000006" href="$structskitter_1_1transport_1_1Server_1_1Impl.html#aa257e8312a94d6629623707d3913f94d" title=" " alt="" coords="439,453,673,493"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="707,476,674,476,674,471,707,471"/>
+<area shape="rect" id="Node000007" href="$structskitter_1_1transport_1_1Server_1_1Impl.html#addab4d5257dbed5f1c4cbebaca4d5179" title=" " alt="" coords="200,453,391,493"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="425,476,391,476,391,471,425,471"/>
+<area shape="rect" id="Node000008" href="$structskitter_1_1transport_1_1Server_1_1Impl.html#a81ae0539f6b17defa137cf85b2e24032" title=" " alt="" coords="5,453,152,493"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="186,476,152,476,152,471,186,471"/>
+<area shape="poly" id="edge14_Node000013_Node000004" title=" " alt="" coords="1102,311,1096,315,1058,358,1026,405,1002,450,986,486,981,484,997,448,1021,402,1053,354,1093,311,1098,307"/>
+<area shape="poly" id="edge18_Node000016_Node000004" title=" " alt="" coords="1081,490,1042,497,1041,492,1080,485"/>
+<area shape="poly" id="edge20_Node000017_Node000004" title=" " alt="" coords="1080,526,1041,519,1042,514,1081,520"/>
+<area shape="poly" id="edge23_Node000018_Node000004" title=" " alt="" coords="1098,704,1093,699,1053,656,1021,608,997,563,981,527,986,524,1002,560,1026,606,1058,653,1096,695,1102,700"/>
+<area shape="rect" id="Node000019" href="$classskitter_1_1core_1_1Value.html#a64b371e896afe7118eb40b5c0f74cb63" title="Access or create an entry in an object by key." alt="" coords="903,709,1047,749"/>
+<area shape="poly" id="edge22_Node000018_Node000019" title=" " alt="" coords="1081,732,1047,732,1047,727,1081,727"/>
+<area shape="poly" id="edge26_Node000021_Node000004" title=" " alt="" coords="1106,578,1093,572,1011,528,1013,523,1096,567,1109,573"/>
+</map>

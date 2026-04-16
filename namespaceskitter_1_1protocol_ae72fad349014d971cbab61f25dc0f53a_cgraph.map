@@ -1,0 +1,6 @@
+<map id="skitter::protocol::from_json_response" name="skitter::protocol::from_json_response">
+<area shape="rect" id="Node000001" title="Deserializes a JSON string into an RpcResponse object according to the JSON&#45;RPC 2...." alt="" coords="5,29,159,69"/>
+<area shape="rect" id="Node000002" href="$namespaceskitter_1_1protocol.html#a3d1db15681ae589ed41abc0cd14507a5" title=" " alt="" coords="207,29,340,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,47,193,47,193,52,159,52"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="237,30,235,20,241,11,254,5,273,3,296,6,308,13,305,17,294,11,273,8,255,10,245,15,241,21,243,28"/>
+</map>
